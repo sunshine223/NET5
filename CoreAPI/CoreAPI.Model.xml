@@ -1,0 +1,1426 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CoreAPI.Model</name>
+    </assembly>
+    <members>
+        <member name="P:CoreAPI.Model.BASE.MessageModel`1.status">
+            <summary>
+            状态码
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.BASE.MessageModel`1.success">
+            <summary>
+            操作是否成功
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.BASE.MessageModel`1.msg">
+            <summary>
+            返回信息
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.BASE.MessageModel`1.response">
+            <summary>
+            返回数据集合
+            </summary>
+        </member>
+        <member name="T:CoreAPI.Model.BASE.PageModels`1">
+            <summary>
+            通用分页信息类
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.BASE.PageModels`1.page">
+            <summary>
+            当前页标
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.BASE.PageModels`1.pageCount">
+            <summary>
+            总页数
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.BASE.PageModels`1.dataCount">
+            <summary>
+            数据总数
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.BASE.PageModels`1.PageSize">
+            <summary>
+            每页大小
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.BASE.PageModels`1.data">
+            <summary>
+            返回数据
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Advertisement.ImgUrl">
+            <summary>
+            广告图片
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Advertisement.Title">
+            <summary>
+            广告标题
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Advertisement.Url">
+            <summary>
+            广告链接
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Advertisement.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Advertisement.Createdate">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Apply.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Apply.Title">
+            <summary>
+            节目名称
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Apply.Img">
+            <summary>
+            图片
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Apply.Descn">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Apply.StartTime">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Apply.EndTime">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Apply.Url">
+            <summary>
+            报名地址
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Apply.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Apply.Number">
+            <summary>
+            上限人数
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Apply.Type">
+            <summary>
+             1:全类型(个人和团体) 2：个人 3：团队
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Apply.IsPay">
+            <summary>
+            是否付费 0：否 1：是
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Apply.Price">
+            <summary>
+            价格
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Apply.IsHelpSelection">
+            <summary>
+            是否开启评选助力 0：否 1：是
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Apply.MatchTime">
+            <summary>
+            比赛时间
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Apply.HostPhone">
+            <summary>
+            主办方电话
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Apply.SignInTime">
+            <summary>
+            签到时间
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Apply.Venue">
+            <summary>
+            比赛地点
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Apply.IsHelpActivity">
+            <summary>
+            是否开启投票助力 0：否 1：是
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Apply.Status">
+            <summary>
+            1通过 2禁止 3等待
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Apply.TriesLimit">
+            <summary>
+            用户报名限制
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Apply.Stage">
+            <summary>
+            报名阶段（1.预约，2.正在报名）
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Apply.IsWhite">
+            <summary>
+            白名单
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplyItem.Id">
+            <summary>
+            小金钟网络赛报名表
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplyItem.Name">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplyItem.Code">
+            <summary>
+            编号
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplyItem.Sex">
+            <summary>
+            性别
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplyItem.Nation">
+            <summary>
+            民族
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplyItem.Birthday">
+            <summary>
+            生日
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplyItem.Stage">
+            <summary>
+            参赛年龄阶段空不限制
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplyItem.Parent">
+            <summary>
+            家长姓名
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplyItem.Mobile">
+            <summary>
+            手机号码
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplyItem.QQ">
+            <summary>
+            qq
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplyItem.Email">
+            <summary>
+            邮箱
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplyItem.Address">
+            <summary>
+            联系地址
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplyItem.Program">
+            <summary>
+            节目名称
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplyItem.Descn">
+            <summary>
+            自我介绍
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplyItem.Levels">
+            <summary>
+            组别
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplyItem.Category">
+            <summary>
+            声乐类或器乐类
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplyItem.Kind">
+            <summary>
+            种类
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplyItem.Link">
+            <summary>
+            网盘链接
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplyItem.ExtractCode">
+            <summary>
+            提取密码
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplyItem.HeadImage">
+            <summary>
+            选手头像
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplyItem.Organization">
+            <summary>
+            选送机构
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplyItem.OrganizationArea">
+            <summary>
+            机构区域
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplyItem.Recommended">
+            <summary>
+            推荐老师
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplyItem.RecommendedMobile">
+            <summary>
+            老师电话
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplyItem.CreateTime">
+            <summary>
+            报名时间
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplyItem.Type">
+            <summary>
+            参赛类型，个人或团队
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplyItem.People">
+            <summary>
+            人数
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplyItem.ParentId">
+            <summary>
+            所属活动id
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplyItem.PrimaryRegion">
+            <summary>
+            原送选赛区原送选赛区
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplyItem.ProgramDuration">
+            <summary>
+            节目时长
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplyItem.IsAccompaniment">
+            <summary>
+            有无伴奏 0：所有 1 ：有伴奏 2：无伴奏
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplyItem.MusicalName">
+            <summary>
+            乐器名称
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplyItem.CompetitionForm">
+            <summary>
+            有无伴奏 0：所有 1 ：有伴奏 2：无伴奏
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplyItem.WorksForm">
+            <summary>
+            参赛作品形式
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplyItem.Rank">
+            <summary>
+            选手排名
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplyItem.Result">
+            <summary>
+            1:晋级 2：未晋级
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplyItem.Source">
+            <summary>
+            来源统计(1.扫描 2.链接)
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplyItem.Status">
+            <summary>
+            审核状态
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplySignIn.Id">
+            <summary>
+            签到表ID
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplySignIn.ApplyId">
+            <summary>
+            活动ID
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplySignIn.ApplyItemId">
+            <summary>
+            选手ID
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplySignIn.UserId">
+            <summary>
+            用户id
+            </summary> 
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplySignIn.CreateTime">
+            <summary>
+            签到时间
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ApplySignIn.Status">
+            <summary>
+            签到状态 1签到
+            </summary>
+        </member>
+        <member name="T:CoreAPI.Model.Models.BlogArticle">
+            <summary>
+            博客文章
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.BlogArticle.bID">
+            <summary>
+            主键
+            </summary>
+            这里之所以没用RootEntity，是想保持和之前的数据库一致，主键是bID，不是Id
+        </member>
+        <member name="P:CoreAPI.Model.Models.BlogArticle.bsubmitter">
+            <summary>
+            创建人
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.BlogArticle.btitle">
+            <summary>
+            标题blog
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.BlogArticle.bcategory">
+            <summary>
+            类别
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.BlogArticle.bcontent">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.BlogArticle.btraffic">
+            <summary>
+            访问量
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.BlogArticle.bcommentNum">
+            <summary>
+            评论数量
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.BlogArticle.bUpdateTime">
+            <summary> 
+            修改时间
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.BlogArticle.bCreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.BlogArticle.bRemark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.BlogArticle.IsDeleted">
+            <summary>
+            逻辑删除
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Guestbook.id">
+            <summary>
+            留言表
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Guestbook.blogId">
+            <summary>博客ID
+            
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Guestbook.createdate">
+            <summary>创建时间
+            
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Guestbook.phone">
+            <summary>手机
+            
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Guestbook.QQ">
+            <summary>qq
+            
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Guestbook.body">
+            <summary>留言内容
+            
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Guestbook.ip">
+            <summary>ip地址
+            
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Guestbook.isshow">
+            <summary>是否显示在前台,0否1是
+            
+            </summary>
+        </member>
+        <member name="T:CoreAPI.Model.Models.ModulePermission">
+            <summary>
+            菜单与按钮关系表
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ModulePermission.IsDeleted">
+             <summary>
+            获取或设置是否禁用，逻辑上的删除，非物理删除
+             </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ModulePermission.ModuleId">
+            <summary>
+            菜单ID
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ModulePermission.PermissionId">
+            <summary>
+            按钮ID
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ModulePermission.CreateId">
+            <summary>
+            创建ID
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ModulePermission.CreateBy">
+            <summary>
+            创建者
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ModulePermission.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ModulePermission.ModifyId">
+            <summary>
+            修改ID
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ModulePermission.ModifyBy">
+            <summary>
+            修改者
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.ModulePermission.ModifyTime">
+             <summary>
+            修改时间
+             </summary>
+        </member>
+        <member name="T:CoreAPI.Model.Models.Modules">
+            <summary>
+            接口API地址信息表
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Modules.IsDeleted">
+             <summary>
+            获取或设置是否禁用，逻辑上的删除，非物理删除
+             </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Modules.ParentId">
+            <summary>
+            父ID
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Modules.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Modules.LinkUrl">
+            <summary>
+            菜单链接地址
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Modules.Area">
+            <summary>
+            区域名称
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Modules.Controller">
+            <summary>
+            控制器名称
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Modules.Action">
+            <summary>
+            Action名称
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Modules.Icon">
+            <summary>
+            图标
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Modules.Code">
+            <summary>
+            菜单编号
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Modules.OrderSort">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Modules.Description">
+            <summary>
+            /描述
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Modules.IsMenu">
+            <summary>
+            是否是右侧菜单
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Modules.Enabled">
+            <summary>
+            是否激活
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Modules.CreateId">
+            <summary>
+            创建ID
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Modules.CreateBy">
+            <summary>
+            创建者
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Modules.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Modules.ModifyId">
+            <summary>
+            修改ID
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Modules.ModifyBy">
+            <summary>
+            修改者
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Modules.ModifyTime">
+            <summary>
+            修改时间
+            </summary>
+        </member>
+        <member name="T:CoreAPI.Model.Models.OperateLog">
+            <summary>
+            日志记录
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.OperateLog.IsDeleted">
+             <summary>
+            获取或设置是否禁用，逻辑上的删除，非物理删除
+             </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.OperateLog.Area">
+            <summary>
+            区域名
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.OperateLog.Controller">
+            <summary>
+            区域控制器名
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.OperateLog.Action">
+            <summary>
+            Action名称
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.OperateLog.IPAddress">
+            <summary>
+            IP地址
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.OperateLog.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.OperateLog.LogTime">
+            <summary>
+            登录时间
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.OperateLog.LoginName">
+            <summary>
+            登录名称
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.OperateLog.UserId">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="T:CoreAPI.Model.Models.PasswordLib">
+            <summary>
+            密码库表
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.PasswordLib.IsDeleted">
+             <summary>
+            获取或设置是否禁用，逻辑上的删除，非物理删除
+             </summary>
+        </member>
+        <member name="T:CoreAPI.Model.Models.Permission">
+            <summary>
+            路由菜单表
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Permission.Code">
+            <summary>
+            菜单执行Action名
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Permission.Name">
+            <summary>
+            菜单显示名（如用户页、编辑(按钮)、删除(按钮)）
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Permission.IsButton">
+            <summary>
+            是否是按钮
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Permission.IsHide">
+            <summary>
+            是否是隐藏菜单
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Permission.IskeepAlive">
+            <summary>
+            是否keepAlive
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Permission.Func">
+            <summary>
+            按钮事件
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Permission.Pid">
+            <summary>
+            上一级菜单（0表示上一级无菜单）
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Permission.Mid">
+            <summary>
+            接口api
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Permission.OrderSort">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Permission.Icon">
+            <summary>
+            菜单图标
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Permission.Description">
+            <summary>
+            菜单描述    
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Permission.Enabled">
+            <summary>
+            激活状态
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Permission.CreateId">
+            <summary>
+            创建ID
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Permission.CreateBy">
+            <summary>
+            创建者
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Permission.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Permission.ModifyId">
+            <summary>
+            修改ID
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Permission.ModifyBy">
+            <summary>
+            修改者
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Permission.ModifyTime">
+            <summary>
+            修改时间
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Permission.IsDeleted">
+             <summary>
+            获取或设置是否禁用，逻辑上的删除，非物理删除
+             </summary>
+        </member>
+        <member name="T:CoreAPI.Model.Models.Role">
+            <summary>
+            角色表
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Role.IsDeleted">
+             <summary>
+            获取或设置是否禁用，逻辑上的删除，非物理删除
+             </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Role.Name">
+            <summary>
+            角色名
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Role.Description">
+             <summary>
+            描述
+             </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Role.OrderSort">
+             <summary>
+            排序
+             </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Role.Enabled">
+            <summary>
+            是否激活
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Role.CreateId">
+            <summary>
+            创建ID
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Role.CreateBy">
+            <summary>
+            创建者
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Role.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Role.ModifyId">
+            <summary>
+            修改ID
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Role.ModifyBy">
+            <summary>
+            修改者
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.Role.ModifyTime">
+            <summary>
+            修改时间
+            </summary>
+        </member>
+        <member name="T:CoreAPI.Model.Models.RoleModulePermission">
+            <summary>
+            按钮跟权限关联表
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.RoleModulePermission.IsDeleted">
+             <summary>
+            获取或设置是否禁用，逻辑上的删除，非物理删除
+             </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.RoleModulePermission.RoleId">
+            <summary>
+            角色ID
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.RoleModulePermission.ModuleId">
+            <summary>
+            菜单ID
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.RoleModulePermission.PermissionId">
+            <summary>
+            api ID
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.RoleModulePermission.CreateId">
+            <summary>
+            创建ID
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.RoleModulePermission.CreateBy">
+            <summary>
+            创建者
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.RoleModulePermission.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.RoleModulePermission.ModifyId">
+            <summary>
+            修改ID
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.RoleModulePermission.ModifyBy">
+            <summary>
+            修改者
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.RoleModulePermission.ModifyTime">
+            <summary>
+            修改时间
+            </summary>
+        </member>
+        <member name="T:CoreAPI.Model.Models.sysUserInfo">
+            <summary>
+            用户信息表
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.sysUserInfo.uID">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.sysUserInfo.uLoginName">
+            <summary>
+            登录账号
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.sysUserInfo.uLoginPWD">
+            <summary>
+            登录密码
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.sysUserInfo.uRealName">
+            <summary>
+            真实姓名
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.sysUserInfo.uStatus">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.sysUserInfo.uRemark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.sysUserInfo.uCreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.sysUserInfo.uUpdateTime">
+            <summary>
+            更新时间
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.sysUserInfo.uLastErrTime">
+             <summary>
+            最后登录时间 
+             </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.sysUserInfo.uErrorCount">
+             <summary>
+            错误次数 
+             </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.sysUserInfo.name">
+            <summary>
+            登录账号
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.sysUserInfo.sex">
+            <summary>
+            // 性别
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.sysUserInfo.age">
+            <summary>
+            年龄
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.sysUserInfo.birth">
+            <summary>
+             生日
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.sysUserInfo.addr">
+            <summary>
+            地址
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.sysUserInfo.tdIsDelete">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.sysUserInfo.RIDs">
+            <summary>
+            权限ID
+            </summary>
+        </member>
+        <member name="T:CoreAPI.Model.Models.TasksQz">
+            <summary>
+            任务计划表
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.TasksQz.Name">
+            <summary>
+            任务名称
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.TasksQz.JobGroup">
+            <summary>
+            任务分组
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.TasksQz.Cron">
+            <summary>
+            任务运行时间表达式
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.TasksQz.AssemblyName">
+            <summary>
+            任务所在DLL对应的程序集名称
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.TasksQz.ClassName">
+            <summary>
+            任务所在类
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.TasksQz.Remark">
+            <summary>
+            任务描述
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.TasksQz.RunTimes">
+            <summary>
+            执行次数
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.TasksQz.BeginTime">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.TasksQz.EndTime">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.TasksQz.TriggerType">
+            <summary>
+            触发器类型（0、simple 1、cron）
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.TasksQz.IntervalSecond">
+            <summary>
+            执行间隔时间, 秒为单位
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.TasksQz.IsStart">
+            <summary>
+            是否启动
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.TasksQz.JobParams">
+            <summary>
+            执行传参
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.TasksQz.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:CoreAPI.Model.Models.Topic">
+            <summary>
+            Tibug 类别
+            </summary>
+        </member>
+        <member name="T:CoreAPI.Model.Models.TopicDetail">
+            <summary>
+            Tibug 博文
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.User.Id">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.User.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.User.Address">
+            <summary>
+            地址
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.User.NickName">
+            <summary>
+            昵称
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.User.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.User.Email">
+            <summary>
+            邮箱
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.User.EmailVerify">
+            <summary>
+            邮箱是否激活
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.User.PhoneVerify">
+            <summary>
+            是否绑定手机
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.User.RegisterTime">
+            <summary>
+            注册时间
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.User.RegisterIP">
+            <summary>
+            注册IP
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.User.LastLoginTime">
+            <summary>
+            上次访问时间
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.User.LastLoginIP">
+            <summary>
+            最后登录IP
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.User.VerifyStatus">
+            <summary>
+            审核状态
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.User.IsTestUser">
+            <summary>
+            是否为测试用户
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.User.EncryptCode">
+            <summary>
+            用户标识（对内） or 微信用户标识
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.User.Mobile">
+            <summary>
+            手机号码
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.User.HeadImg">
+            <summary>
+            用户头像
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.User.Sex">
+            <summary>
+            性别
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.User.Remark">
+            <summary>
+            是否是马甲用户：1代表是 2:微信登录用户 3:机器人
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.User.UserCode">
+            <summary>
+            用户标识（对外开放）
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.User.ForumUid">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.UserApply.Id">
+            <summary>
+            用户报名表
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.UserApply.UserId">
+            <summary>
+            报名用户
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.UserApply.ApplyItemId">
+            <summary>
+            报名表Id
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.UserApply.CreateTime">
+            <summary>
+            报名时间
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.UserApply.Status">
+            <summary>
+            报名状态
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.UserApply.ParentId">
+            <summary>
+            活动Id
+            </summary>     
+        </member>
+        <member name="T:CoreAPI.Model.Models.UserRole">
+            <summary>
+            用户跟角色关联表
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.UserRole.IsDeleted">
+             <summary>
+            获取或设置是否禁用，逻辑上的删除，非物理删除
+             </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.UserRole.UserId">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.UserRole.RoleId">
+            <summary>
+            角色ID
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.UserRole.CreateId">
+            <summary>
+            创建ID
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.UserRole.CreateBy">
+            <summary>
+            创建者
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.UserRole.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.UserRole.ModifyId">
+            <summary>
+            修改ID
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.UserRole.ModifyBy">
+            <summary>
+            修改者
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Models.UserRole.ModifyTime">
+            <summary>
+            修改时间
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.RootEntity.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="M:CoreAPI.Model.Seed.DBSeed.SeedAsync(CoreAPI.Model.Seed.MyContext)">
+            <summary>
+            异步添加种子数据
+            </summary>
+            <param name="myContext"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoreAPI.Model.Seed.MyContext.GetMainConnectionDb">
+            <summary>
+            连接字符串 
+            CoreAPI.Model
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Seed.MyContext.ConnectionString">
+            <summary>
+            连接字符串 
+            CoreAPI.Model
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Seed.MyContext.DbType">
+            <summary>
+            数据库类型 
+            CoreAPI.Model 
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Seed.MyContext.Db">
+            <summary>
+            数据连接对象 
+            CoreAPI.Model 
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Model.Seed.MyContext.Context">
+            <summary>
+            数据库上下文实例（自动关闭连接）
+            CoreAPI.Model 
+            </summary>
+        </member>
+        <member name="M:CoreAPI.Model.Seed.MyContext.#ctor">
+            <summary>
+            功能描述:构造函数
+            作　　者:CoreAPI.Model
+            </summary>
+        </member>
+        <member name="M:CoreAPI.Model.Seed.MyContext.GetEntityDB``1">
+            <summary>
+            功能描述:获取数据库处理对象
+            作　　者:CoreAPI.Model
+            </summary>
+            <returns>返回值</returns>
+        </member>
+        <member name="M:CoreAPI.Model.Seed.MyContext.GetEntityDB``1(SqlSugar.SqlSugarClient)">
+            <summary>
+            功能描述:获取数据库处理对象
+            作　　者:CoreAPI.Model
+            </summary>
+            <param name="db">db</param>
+            <returns>返回值</returns>
+        </member>
+        <member name="M:CoreAPI.Model.Seed.MyContext.CreateTableByEntity``1(System.Boolean,``0[])">
+            <summary>
+            功能描述:根据实体类生成数据库表
+            作　　者:CoreAPI.Model
+            </summary>
+            <param name="blnBackupTable">是否备份表</param>
+            <param name="lstEntitys">指定的实体</param>
+        </member>
+        <member name="M:CoreAPI.Model.Seed.MyContext.CreateTableByEntity(System.Boolean,System.Type[])">
+            <summary>
+            功能描述:根据实体类生成数据库表
+            作　　者:CoreAPI.Model
+            </summary>
+            <param name="blnBackupTable">是否备份表</param>
+            <param name="lstEntitys">指定的实体</param>
+        </member>
+        <member name="M:CoreAPI.Model.Seed.MyContext.GetDbContext">
+            <summary>
+            功能描述:获得一个DbContext
+            作　　者:CoreAPI.Model
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CoreAPI.Model.Seed.MyContext.Init(System.String,SqlSugar.DbType)">
+            <summary>
+            功能描述:设置初始化参数
+            作　　者:CoreAPI.Model
+            </summary>
+            <param name="strConnectionString">连接字符串</param>
+            <param name="enmDbType">数据库类型</param>
+        </member>
+        <member name="M:CoreAPI.Model.Seed.MyContext.GetConnectionConfig(System.Boolean,System.Boolean)">
+            <summary>
+            功能描述:创建一个链接配置
+            作　　者:CoreAPI.Model
+            </summary>
+            <param name="blnIsAutoCloseConnection">是否自动关闭连接</param>
+            <param name="blnIsShardSameThread">是否夸类事务</param>
+            <returns>ConnectionConfig</returns>
+        </member>
+        <member name="M:CoreAPI.Model.Seed.MyContext.GetCustomDB(SqlSugar.ConnectionConfig)">
+            <summary>
+            功能描述:获取一个自定义的DB
+            作　　者:CoreAPI.Model
+            </summary>
+            <param name="config">config</param>
+            <returns>返回值</returns>
+        </member>
+        <member name="M:CoreAPI.Model.Seed.MyContext.GetCustomEntityDB``1(SqlSugar.SqlSugarClient)">
+            <summary>
+            功能描述:获取一个自定义的数据库处理对象
+            作　　者:CoreAPI.Model
+            </summary>
+            <param name="sugarClient">sugarClient</param>
+            <returns>返回值</returns>
+        </member>
+        <member name="M:CoreAPI.Model.Seed.MyContext.GetCustomEntityDB``1(SqlSugar.ConnectionConfig)">
+            <summary>
+            功能描述:获取一个自定义的数据库处理对象
+            作　　者:CoreAPI.Model
+            </summary>
+            <param name="config">config</param>
+            <returns>返回值</returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>5d260e80-5cc8-4742-9ad6-ca69f392ea77</UserSecretsId>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>..\CoreAPI\CoreAPI.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="LogHelper\**" />
+    <Content Remove="LogHelper\**" />
+    <EmbeddedResource Remove="LogHelper\**" />
+    <None Remove="LogHelper\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="index.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="index.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CoreAPI.Extensions\CoreAPI.Extensions.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\js\jquery-3.3.1.min.js" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,185 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CoreAPI</name>
+    </assembly>
+    <members>
+        <member name="M:CoreAPI.Controllers.v1.LoginController.GetToken(System.String,System.String)">
+            <summary>
+            登录获取token
+            </summary>
+            <param name="UserLog"></param>
+            <param name="UserPwd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoreAPI.Controllers.v1.LoginController.GetJwtToken3(System.String,System.String)">
+            <summary>
+            登录获取token方案2 30s过期
+            </summary>
+            <param name="UserLog"></param>
+            <param name="UserPwd"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CoreAPI.Controllers.v2.TasksQzController">
+            <summary>
+            任务调度
+            </summary>
+        </member>
+        <member name="M:CoreAPI.Controllers.v2.TasksQzController.GetPage(System.Int32,System.Int32)">
+             <summary>
+            查看任务列表 分页获取
+             </summary>
+             <param name="pageIndex"></param>
+             <param name="PageSize"></param>
+             <returns></returns>
+        </member>
+        <member name="M:CoreAPI.Controllers.v2.TasksQzController.TasksQzAdd(CoreAPI.Model.Models.TasksQz)">
+            <summary>
+            添加定时任务
+            </summary>
+            <param name="p"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoreAPI.Controllers.v2.TasksQzController.TasksQzUpdate(CoreAPI.Model.Models.TasksQz)">
+            <summary>
+            修改定时任务
+            </summary>
+            <param name="p"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoreAPI.Controllers.v2.TasksQzController.TasksQzStart(CoreAPI.Model.Models.TasksQz)">
+            <summary>
+            启动定时任务
+            </summary>
+            <param name="p"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoreAPI.Controllers.v2.TasksQzController.TasksQzStop(CoreAPI.Model.Models.TasksQz)">
+            <summary>
+            停止定时任务
+            </summary>
+            <param name="p"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CoreAPI.Controllers.v2.TestController">
+            <summary>
+            测试
+            </summary>
+        </member>
+        <member name="M:CoreAPI.Controllers.v2.TestController.RedisMq(CoreAPI.Common.IRedisBasketRepository)">
+            <summary>
+            测试Redis消息队列
+            </summary>
+            <param name="_redisBasketRepository"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoreAPI.Controllers.v2.TestController.RedisChche">
+            <summary>
+            测试Redis缓存
+            </summary>
+            <param name="uID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CoreAPI.Filter.CustomRouteAttribute">
+            <summary>
+            自定义路由 /api/{version}/[controler]/[action]
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Filter.CustomRouteAttribute.GroupName">
+            <summary>
+            分组名称,是来实现接口 IApiDescriptionGroupNameProvider
+            </summary>
+        </member>
+        <member name="M:CoreAPI.Filter.CustomRouteAttribute.#ctor(System.String)">
+            <summary>
+            自定义路由构造函数，继承基类路由
+            </summary>
+            <param name="actionName"></param>
+        </member>
+        <member name="M:CoreAPI.Filter.CustomRouteAttribute.#ctor(CoreAPI.ServiceExtensions.CustomApiVersion.ApiVersions,System.String)">
+            <summary>
+            自定义版本+路由构造函数，继承基类路由
+            </summary>
+            <param name="actionName"></param>
+            <param name="version"></param>
+        </member>
+        <member name="T:CoreAPI.Filter.GlobalExceptionsFilter">
+            <summary>
+            全局异常错误日志
+            </summary>
+        </member>
+        <member name="M:CoreAPI.Filter.GlobalExceptionsFilter.WriteLog(System.String,System.Exception)">
+            <summary>
+            自定义返回格式
+            </summary>
+            <param name="throwMsg"></param>
+            <param name="ex"></param>
+            <returns></returns>
+        </member>
+        <member name="P:CoreAPI.Filter.JsonErrorResponse.Message">
+            <summary>
+            生产环境的消息
+            </summary>
+        </member>
+        <member name="P:CoreAPI.Filter.JsonErrorResponse.DevelopmentMessage">
+            <summary>
+            开发环境的消息
+            </summary>
+        </member>
+        <member name="T:CoreAPI.Filter.GlobalRoutePrefixFilter">
+            <summary>
+            全局路由前缀公约
+            </summary>
+        </member>
+        <member name="M:CoreAPI.Startup.ConfigureContainer(Autofac.ContainerBuilder)">
+            <summary>
+             注意在CreateDefaultBuilder中，添加Autofac服务工厂
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="M:CoreAPI.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,CoreAPI.Model.Seed.MyContext,CoreAPI.IService.ITasksQzServices,CoreAPI.Tasks.ISchedulerCenter,Microsoft.Extensions.Hosting.IHostApplicationLifetime)">
+            <summary>
+            
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+            <param name="myContext"></param>
+            <param name="tasksQzServices"></param>
+            <param name="schedulerCenter"></param>
+            <param name="lifetime"></param>
+        </member>
+        <member name="T:CoreAPIController.Controllers.v2.LoginController">
+            <summary>
+            用户登录
+            </summary>
+        </member>
+        <member name="M:CoreAPIController.Controllers.v2.LoginController.GetToken(System.String,System.String)">
+            <summary>
+            登录获取token方案1 1000s过期
+            </summary>
+            <param name="UserLog"></param>
+            <param name="UserPwd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoreAPIController.Controllers.v2.LoginController.Delete(System.Int32)">
+            <summary>
+            清除用户登录信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CoreAPIController.Controllers.v2.LoginController.Add(CoreAPI.Model.Models.sysUserInfo)">
+            <summary>
+            添加用户信息
+            </summary>
+            <param name="p"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoreAPIController.Controllers.v2.LoginController.Md5Password(System.String)">
+            <summary>
+            测试 MD5 加密字符串
+            </summary>
+            <param name="password"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

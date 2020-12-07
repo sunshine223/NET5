@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\CoreAPI\bin\Debug\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CoreAPI.Common\CoreAPI.Common.csproj" />
+    <ProjectReference Include="..\CoreAPI.Model\CoreAPI.Model.csproj" />
+  </ItemGroup>
+
+</Project>
