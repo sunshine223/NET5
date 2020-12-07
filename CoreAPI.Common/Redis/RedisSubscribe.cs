@@ -1,11 +1,7 @@
 ﻿using CoreAPI.Core;
 using InitQ.Abstractions;
 using InitQ.Attributes;
-using StackExchange.Redis;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace CoreAPI.Common.Redis
