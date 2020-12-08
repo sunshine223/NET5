@@ -66,6 +66,13 @@
             测试
             </summary>
         </member>
+        <member name="M:CoreAPI.Controllers.v2.TestController.Automapper(CoreAPI.DTO.UserInfoDTO)">
+            <summary>
+            测试Automapper
+            </summary>
+            <param name="p"></param>
+            <returns></returns>
+        </member>
         <member name="M:CoreAPI.Controllers.v2.TestController.RedisMq(CoreAPI.Common.IRedisBasketRepository)">
             <summary>
             测试Redis消息队列
@@ -77,7 +84,6 @@
             <summary>
             测试Redis缓存
             </summary>
-            <param name="uID"></param>
             <returns></returns>
         </member>
         <member name="T:CoreAPI.Filter.CustomRouteAttribute">

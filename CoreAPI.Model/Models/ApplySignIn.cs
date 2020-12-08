@@ -1,13 +1,9 @@
 ﻿using SqlSugar;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CoreAPI.Model.Models
 {
-   public class ApplySignIn
+    public class ApplySignIn
     {
         /// <summary>
         /// 签到表ID

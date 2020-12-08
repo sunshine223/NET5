@@ -81,91 +81,91 @@ namespace CoreAPI.Model.Seed
                 });
                 ConsoleHelper.WriteSuccessLine($"Tables created successfully!");
                 Console.WriteLine();
-                if (Appsettings.app(new string[] { "AppSettings", "SeedDBDataEnabled" }).ObjToBool())
-                {
-                    Console.WriteLine($"Seeding database data (The Db Id:{MyContext.ConnId})...");
-                    #region BlogArticle
-                    if (!await myContext.Db.Queryable<BlogArticle>().AnyAsync())
-                    {
-                        Console.WriteLine("Table:BlogArticle already exists...");
-                    }
-                    #endregion
-                    #region Modules
-                    if (!await myContext.Db.Queryable<Modules>().AnyAsync())
-                    {
-                        Console.WriteLine("Table:Modules already exists...");
-                    }
-                    #endregion
-                    #region Permission
-                    if (!await myContext.Db.Queryable<Permission>().AnyAsync())
-                    {
-                        Console.WriteLine("Table:Permission already exists...");
-                    }
-                    #endregion
-                    #region Role
-                    if (!await myContext.Db.Queryable<Role>().AnyAsync())
-                    {
-                        Console.WriteLine("Table:Role already exists...");
-                    }
-                    #endregion
-                    #region RoleModulePermission
-                    if (!await myContext.Db.Queryable<RoleModulePermission>().AnyAsync())
-                    {
-                        Console.WriteLine("Table:RoleModulePermission already exists...");
-                    }
-                    #endregion
-                    #region Topic
-                    if (!await myContext.Db.Queryable<Topic>().AnyAsync())
-                    {
-                        Console.WriteLine("Table:Topic already exists...");
-                    }
-                    #endregion
-                    #region TopicDetail
-                    if (!await myContext.Db.Queryable<TopicDetail>().AnyAsync())
-                    {
+                //if (Appsettings.app(new string[] { "AppSettings", "SeedDBDataEnabled" }).ObjToBool())
+                //{
+                //    Console.WriteLine($"Seeding database data (The Db Id:{MyContext.ConnId})...");
+                //    #region BlogArticle
+                //    if (!await myContext.Db.Queryable<BlogArticle>().AnyAsync())
+                //    {
+                //        Console.WriteLine("Table:BlogArticle already exists...");
+                //    }
+                //    #endregion
+                //    #region Modules
+                //    if (!await myContext.Db.Queryable<Modules>().AnyAsync())
+                //    {
+                //        Console.WriteLine("Table:Modules already exists...");
+                //    }
+                //    #endregion
+                //    #region Permission
+                //    if (!await myContext.Db.Queryable<Permission>().AnyAsync())
+                //    {
+                //        Console.WriteLine("Table:Permission already exists...");
+                //    }
+                //    #endregion
+                //    #region Role
+                //    if (!await myContext.Db.Queryable<Role>().AnyAsync())
+                //    {
+                //        Console.WriteLine("Table:Role already exists...");
+                //    }
+                //    #endregion
+                //    #region RoleModulePermission
+                //    if (!await myContext.Db.Queryable<RoleModulePermission>().AnyAsync())
+                //    {
+                //        Console.WriteLine("Table:RoleModulePermission already exists...");
+                //    }
+                //    #endregion
+                //    #region Topic
+                //    if (!await myContext.Db.Queryable<Topic>().AnyAsync())
+                //    {
+                //        Console.WriteLine("Table:Topic already exists...");
+                //    }
+                //    #endregion
+                //    #region TopicDetail
+                //    if (!await myContext.Db.Queryable<TopicDetail>().AnyAsync())
+                //    {
                     
-                        Console.WriteLine("Table:TopicDetail already exists...");
-                    }
-                    #endregion
-                    #region UserRole
-                    if (!await myContext.Db.Queryable<UserRole>().AnyAsync())
-                    {
-                        Console.WriteLine("Table:UserRole already exists...");
-                    }
-                    #endregion
-                    #region ApplySignIn
-                    if (!await myContext.Db.Queryable<ApplySignIn>().AnyAsync())
-                    {
-                        Console.WriteLine("Table:ApplySignIn already exists...");
-                    }
-                    #endregion
-                    #region Apply
-                    if (!await myContext.Db.Queryable<Apply>().AnyAsync())
-                    {
-                        Console.WriteLine("Table:Apply already exists...");
-                    }
-                    #endregion
-                    #region ApplyItem
-                    if (!await myContext.Db.Queryable<ApplyItem>().AnyAsync())
-                    {
-                        Console.WriteLine("Table:ApplyItem already exists...");
-                    }
-                    #endregion
-                    #region User
-                    if (!await myContext.Db.Queryable<User>().AnyAsync())
-                    {
-                        Console.WriteLine("Table:User already exists...");
-                    }
-                    #endregion
-                    #region UserApply
-                    if (!await myContext.Db.Queryable<UserApply>().AnyAsync())
-                    {
-                        Console.WriteLine("Table:UserApply already exists...");
-                    }
-                    #endregion
-                    ConsoleHelper.WriteSuccessLine($"Done seeding database!");
-                }
-                Console.WriteLine();
+                //        Console.WriteLine("Table:TopicDetail already exists...");
+                //    }
+                //    #endregion
+                //    #region UserRole
+                //    if (!await myContext.Db.Queryable<UserRole>().AnyAsync())
+                //    {
+                //        Console.WriteLine("Table:UserRole already exists...");
+                //    }
+                //    #endregion
+                //    #region ApplySignIn
+                //    if (!await myContext.Db.Queryable<ApplySignIn>().AnyAsync())
+                //    {
+                //        Console.WriteLine("Table:ApplySignIn already exists...");
+                //    }
+                //    #endregion
+                //    #region Apply
+                //    if (!await myContext.Db.Queryable<Apply>().AnyAsync())
+                //    {
+                //        Console.WriteLine("Table:Apply already exists...");
+                //    }
+                //    #endregion
+                //    #region ApplyItem
+                //    if (!await myContext.Db.Queryable<ApplyItem>().AnyAsync())
+                //    {
+                //        Console.WriteLine("Table:ApplyItem already exists...");
+                //    }
+                //    #endregion
+                //    #region User
+                //    if (!await myContext.Db.Queryable<User>().AnyAsync())
+                //    {
+                //        Console.WriteLine("Table:User already exists...");
+                //    }
+                //    #endregion
+                //    #region UserApply
+                //    if (!await myContext.Db.Queryable<UserApply>().AnyAsync())
+                //    {
+                //        Console.WriteLine("Table:UserApply already exists...");
+                //    }
+                //    #endregion
+                //    ConsoleHelper.WriteSuccessLine($"Done seeding database!");
+                //}
+                //Console.WriteLine();
             }
             catch (Exception ex)
             {
