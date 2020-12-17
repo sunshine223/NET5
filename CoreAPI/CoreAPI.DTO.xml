@@ -4,30 +4,5 @@
         <name>CoreAPI.DTO</name>
     </assembly>
     <members>
-        <member name="P:CoreAPI.DTO.UserInfoDTO.ApplyId">
-            <summary>
-            活动ID
-            </summary>
-        </member>
-        <member name="P:CoreAPI.DTO.UserInfoDTO.ApplyItemId">
-            <summary>
-            选手ID
-            </summary>
-        </member>
-        <member name="P:CoreAPI.DTO.UserInfoDTO.UserId">
-            <summary>
-            用户id
-            </summary> 
-        </member>
-        <member name="P:CoreAPI.DTO.UserInfoDTO.CreateTime">
-            <summary>
-            签到时间
-            </summary>
-        </member>
-        <member name="P:CoreAPI.DTO.UserInfoDTO.Status">
-            <summary>
-            签到状态 1签到
-            </summary>
-        </member>
     </members>
 </doc>

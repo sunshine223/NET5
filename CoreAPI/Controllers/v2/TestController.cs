@@ -1,6 +1,5 @@
 ﻿using CoreAPI.Common;
 using CoreAPI.Core;
-using CoreAPI.DTO;
 using CoreAPI.Filter;
 using CoreAPI.IService;
 using CoreAPI.Model.BASE;
@@ -25,30 +24,11 @@ namespace CoreAPI.Controllers.v2
     {
         private readonly ITasksQzServices tasksQzServices;
         private readonly IRedisBasketRepository _cache;
-        private readonly IApplySinginService _apply;
 
-        public TestController(ITasksQzServices _tasksQzServices, IRedisBasketRepository cache, IApplySinginService apply)
+        public TestController(ITasksQzServices  _tasksQzServices, IRedisBasketRepository cache)
         {
             tasksQzServices = _tasksQzServices;
             _cache = cache;
-            _apply = apply;
-        }
-        /// <summary>
-        /// 测试Automapper
-        /// </summary>
-        /// <param name="p"></param>
-        /// <returns></returns>
-        [HttpPost("Automapper")]
-        [AllowAnonymous]
-        public async Task<object> Automapper(UserInfoDTO p)
-        {
-            var list =await _apply.AddSign(p);
-            bool c = false;
-            if (list !=false)
-            {
-                c = true;
-            }
-            return c;
         }
         /// <summary>
         /// 测试Redis消息队列
@@ -65,6 +45,7 @@ namespace CoreAPI.Controllers.v2
         /// <summary>
         /// 测试Redis缓存
         /// </summary>
+        /// <param name="uID"></param>
         /// <returns></returns>
         [HttpPost("RedisChche")]
         public async Task<object> RedisChche()

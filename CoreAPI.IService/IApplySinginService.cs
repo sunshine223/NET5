@@ -1,5 +1,4 @@
-﻿using CoreAPI.DTO;
-using CoreAPI.IService.BASE;
+﻿using CoreAPI.IService.BASE;
 using CoreAPI.Model.Models;
 using System;
 using System.Collections.Generic;
@@ -11,7 +10,7 @@ namespace CoreAPI.IService
 {
    public interface IApplySinginService: IBaseServices<ApplySignIn>
     {
-        Task<object> GetList(ApplySignIn p);
-        Task<bool> AddSign(UserInfoDTO p);
+        Task<List<ApplySignIn>> GetList(ApplySignIn p);
+        //Task<ApplySignIn> AddSign(ApplySignIn p);
     }
 }

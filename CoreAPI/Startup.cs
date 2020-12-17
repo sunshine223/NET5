@@ -22,7 +22,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
-using System.IdentityModel.Tokens.Jwt;
 using System.Reflection;
 
 namespace CoreAPI
@@ -43,8 +42,6 @@ namespace CoreAPI
             services.AddSingleton(new Appsettings(Configuration));
             services.AddSingleton(new LogLock(Env.ContentRootPath));
             Permissions.IsUseIds4 = Appsettings.app(new string[] { "Startup", "IdentityServer4", "Enabled" }).ObjToBool();
-            // 确保从认证中心返回的ClaimType不被更改，不使用Map映射
-            JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
             services.AddMemoryCacheSetup();
             services.AddRedisCacheSetup();
 

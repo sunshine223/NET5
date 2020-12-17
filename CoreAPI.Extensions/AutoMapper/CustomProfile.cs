@@ -1,7 +1,6 @@
 ﻿using CoreAPI.DTO;
 using CoreAPI.Model;
 using AutoMapper;
-using CoreAPI.Model.Models;
 
 namespace CoreAPI.Extensions.AutoMapper
 {
@@ -13,7 +12,7 @@ namespace CoreAPI.Extensions.AutoMapper
         public CustomProfile()
         {
             //CreateMap<UserInfo, UserInfoDTO>();
-            CreateMap<UserInfoDTO, ApplySignIn>();
+            //CreateMap<UserInfoDTO, UserInfo>();
         }
     }
 }
