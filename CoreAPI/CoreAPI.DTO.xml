@@ -4,5 +4,80 @@
         <name>CoreAPI.DTO</name>
     </assembly>
     <members>
+        <member name="P:CoreAPI.DTO.UserInfoDTO.uLoginName">
+            <summary>
+            登录账号
+            </summary>
+        </member>
+        <member name="P:CoreAPI.DTO.UserInfoDTO.uLoginPWD">
+            <summary>
+            登录密码
+            </summary>
+        </member>
+        <member name="P:CoreAPI.DTO.UserInfoDTO.uRealName">
+            <summary>
+            真实姓名
+            </summary>
+        </member>
+        <member name="P:CoreAPI.DTO.UserInfoDTO.uStatus">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:CoreAPI.DTO.UserInfoDTO.uRemark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:CoreAPI.DTO.UserInfoDTO.uCreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:CoreAPI.DTO.UserInfoDTO.uUpdateTime">
+            <summary>
+            更新时间
+            </summary>
+        </member>
+        <member name="P:CoreAPI.DTO.UserInfoDTO.uLastErrTime">
+             <summary>
+            最后登录时间 
+             </summary>
+        </member>
+        <member name="P:CoreAPI.DTO.UserInfoDTO.uErrorCount">
+             <summary>
+            错误次数 
+             </summary>
+        </member>
+        <member name="P:CoreAPI.DTO.UserInfoDTO.name">
+            <summary>
+            登录账号
+            </summary>
+        </member>
+        <member name="P:CoreAPI.DTO.UserInfoDTO.sex">
+            <summary>
+            // 性别
+            </summary>
+        </member>
+        <member name="P:CoreAPI.DTO.UserInfoDTO.age">
+            <summary>
+            年龄
+            </summary>
+        </member>
+        <member name="P:CoreAPI.DTO.UserInfoDTO.birth">
+            <summary>
+             生日
+            </summary>
+        </member>
+        <member name="P:CoreAPI.DTO.UserInfoDTO.addr">
+            <summary>
+            地址
+            </summary>
+        </member>
+        <member name="P:CoreAPI.DTO.UserInfoDTO.tdIsDelete">
+            <summary>
+            是否删除
+            </summary>
+        </member>
     </members>
 </doc>

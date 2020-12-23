@@ -1,5 +1,6 @@
 ﻿using CoreAPI.Common;
 using CoreAPI.Common.Helper;
+using CoreAPI.DTO;
 using CoreAPI.Filter;
 using CoreAPI.IService;
 using CoreAPI.Model.BASE;
@@ -96,11 +97,11 @@ namespace CoreAPIController.Controllers.v2
         [Authorize]//无策略授权 
         //[Authorize(Permissions.Name)]基于策略授权
         [HttpPost("Add")]
-        public async Task<MessageModel<string>> Add(sysUserInfo p)
+        public async Task<MessageModel<string>> Add(UserInfoDTO p)
         {
             var data = new MessageModel<string>();
             var list = await _userInfo.Adds(p);
-            data.success = list.uID> 0;
+            data.success = list.uLoginName !=null; 
             if (data.success)
             {
                 data.success=true;

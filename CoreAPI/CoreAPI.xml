@@ -47,18 +47,25 @@
             <param name="p"></param>
             <returns></returns>
         </member>
-        <member name="M:CoreAPI.Controllers.v2.TasksQzController.TasksQzStart(CoreAPI.Model.Models.TasksQz)">
+        <member name="M:CoreAPI.Controllers.v2.TasksQzController.TasksQzStart(System.Int32)">
             <summary>
             启动定时任务
             </summary>
-            <param name="p"></param>
+            <param name="jobId"></param>
             <returns></returns>
         </member>
-        <member name="M:CoreAPI.Controllers.v2.TasksQzController.TasksQzStop(CoreAPI.Model.Models.TasksQz)">
+        <member name="M:CoreAPI.Controllers.v2.TasksQzController.TasksQzStop(System.Int32)">
             <summary>
             停止定时任务
             </summary>
-            <param name="p"></param>
+            <param name="jobId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoreAPI.Controllers.v2.TasksQzController.ReCovery(System.Int32)">
+            <summary>
+            重启一个计划任务
+            </summary>
+            <param name="jobId"></param>
             <returns></returns>
         </member>
         <member name="T:CoreAPI.Controllers.v2.TestController">
@@ -167,7 +174,7 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:CoreAPIController.Controllers.v2.LoginController.Add(CoreAPI.Model.Models.sysUserInfo)">
+        <member name="M:CoreAPIController.Controllers.v2.LoginController.Add(CoreAPI.DTO.UserInfoDTO)">
             <summary>
             添加用户信息
             </summary>

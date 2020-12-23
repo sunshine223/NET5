@@ -29,17 +29,5 @@ namespace CoreAPI.IService
         /// <param name="p"></param>
         /// <returns></returns>
         Task<bool> TasksQzUpdate(TasksQz p);
-        /// <summary>
-        /// 启动计划任务
-        /// </summary>
-        /// <param name="p"></param>
-        /// <returns></returns>
-        Task<bool> TasksQzStart(TasksQz p);
-        /// <summary>
-        /// 停止计划任务
-        /// </summary>
-        /// <param name="p"></param>
-        /// <returns></returns>
-        Task<bool> TasksQzStop(TasksQz p);
     }
 }
